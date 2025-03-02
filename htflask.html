@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <style>
+        .navbar-brand img{
+          width: 140px;
+        }
+        .navbar-brand{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 10px;
+        }
+        .navbar{
+          padding: 1em 0 !important;
+        }
+        .banner{
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        .home-header{
+          background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/photos/bg.avif);
+          background-position: center;
+          background-size: cover;
+        }
+        
+        .banner-text{
+          font-size: 36px;
+          color: #fff;
+          padding-left: 4%;
+          padding-top: 220px;
+          padding-bottom: 220px;
+        }
+        .banner-text .btn-primary{
+          border: none !important;
+          box-shadow: none !important;
+          font-size: 12px;
+          padding: 15px 30px;
+          margin-top: 10px;
+          font-size: 15px;
+        }
+        .mx-5{
+          font-size: 20px;
+        }
+        .output-text{
+          color: #fff;
+          font-size: 19px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="banner">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b><i>Iot Based Farming</i></b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><b><i>Home</i></b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="circuit.html"><b><i>Circuit</i></b></a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="home-header flex">
+        <div class="banner-text flex">
+          <p>Smart Farming<br>Using Machine Learning Models<br>This is a website is to get crop prediction</p>
+          <a href="predict.html" class="btn btn-primary"><b>Click Here</b></a>
+          <span id="photos"></span>
+        </div>
+      </div>
+    </div>
+    <script>
+      let a = '<img src="/photos/sch.png">';
+      document.getElementById('phoo').innerHTML = a;
+    </script>
+</body>
+</html>
